@@ -1,5 +1,6 @@
 import video_to_img as vti
 import img_to_video as itv
+import img_to_video_ffmpeg as itvff
 
 import sys
 
@@ -23,6 +24,14 @@ Usage:  'path to source vid' 'path to exit video' [-f__]
         print("Usage:  'path to source vid' 'path to exit video' [-f__] ")
 
 
+ulazni_video = argv[1]
+izlazni_video = argv[2]
+
+vti.vid_to_img(ulazni_video)
+
+#UPSCALE
+
+itvff.img_to_vid_ffmpeg()
 
     
 

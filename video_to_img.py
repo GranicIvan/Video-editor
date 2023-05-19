@@ -28,3 +28,5 @@ def vid_to_img(video_name):
 
     cam.release()
     cv2.destroyAllWindows()
+
+vid_to_img("C:\Fajlovi\Projekti\Ivans Video Upscaleer IVU\videos\kratki.mp4")    
